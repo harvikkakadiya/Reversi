@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_1"
+    android:layout_weight="1">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/imageviewMain"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:background="#352315"
+        android:padding="5dp"
+        android:src="@drawable/background_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textp41"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/namebox"
+        android:text="Player 1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewMain"
+        app:layout_constraintStart_toStartOf="@+id/imageviewMain"
+        app:layout_constraintTop_toTopOf="@+id/imageviewMain" />
+
+    <EditText
+        android:id="@+id/textp42"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/namebox"
+        android:text="Player 2"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewMain"
+        app:layout_constraintStart_toStartOf="@+id/imageviewMain"
+        app:layout_constraintTop_toBottomOf="@+id/textp41"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/textp43"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:background="@drawable/namebox"
+        android:text="Player 3"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewMain"
+        app:layout_constraintStart_toStartOf="@+id/imageviewMain"
+        app:layout_constraintTop_toBottomOf="@+id/textp42"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <EditText
+        android:id="@+id/textp44"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:background="@drawable/namebox"
+        android:text="Player 4"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewMain"
+        app:layout_constraintStart_toStartOf="@+id/imageviewMain"
+        app:layout_constraintTop_toBottomOf="@+id/textp43"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <Button
+        android:id="@+id/buttonstart"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/namebox"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="@id/imageviewMain"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewMain"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageviewMain"
+        app:layout_constraintTop_toBottomOf="@+id/textp44"
+        app:layout_constraintVertical_bias="0.473" />
+</android.support.constraint.ConstraintLayout>
